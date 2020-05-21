@@ -1,0 +1,88 @@
+.Login-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  // border: solid 1px;
+}
+
+.Login-form-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5%;
+  flex-basis: 45%;
+  height: 50vh;
+
+  .Login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: solid 0.5px;
+    height: 55%;
+    flex-basis: 50%;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        margin-bottom: 10%;
+      }
+  
+      label {
+        margin-bottom: 2%;
+      }
+  
+      input {
+        margin-bottom: 3%;
+        height: 25%;
+        width: 120%;
+      }
+
+      button {
+        margin-top: 5%;
+        height: 10vh;
+        width: 120%;
+        background-color: #30e3ca;
+        border-color: #30e3ca;
+        border-radius: 5px;
+        font-size: 15px;
+      }
+    }
+
+
+  }
+
+  .Register-redirect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // border: solid 1px;
+    height: 95%;
+    flex-basis: 50%;
+
+    h3 {
+      margin-top: 10%;
+    }
+
+    a{
+      color: black;
+    }
+
+    .Redirect-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 50%;
+      flex-basis: 15%;
+      margin-top: 5%;
+      background-color: #ff9f68;
+    }
+  }
+}

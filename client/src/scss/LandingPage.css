@@ -1,0 +1,101 @@
+.Landing-page-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.Landing-page-container .Landing-page-introduction {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  -ms-flex-preferred-size: 25vh;
+      flex-basis: 25vh;
+  padding: 5%;
+  background-color: #e2f3f5;
+}
+
+.Landing-page-container .Landing-page-introduction h1 {
+  margin-bottom: 2%;
+}
+
+.Landing-page-container .Landing-page-introduction p {
+  margin-bottom: 3%;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.05em;
+  line-height: 1.5em;
+}
+
+.Landing-page-container .Landing-page-introduction .Landing-page-start-button {
+  color: #581b98;
+}
+
+.Landing-page-container .Landing-page-introduction .Landing-page-go-button {
+  height: 7vh;
+  width: 20vw;
+  border: solid;
+  background-color: #22d1ee;
+  border-color: #22d1ee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Landing-page-container .Landing-page-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  height: 100%;
+  padding: 5%;
+}
+
+.Landing-page-container .Landing-page-about .Landing-page-about-content-1 {
+  width: 50%;
+}
+
+.Landing-page-container .Landing-page-about .Landing-page-about-content-1 h1 {
+  margin-bottom: 2%;
+}
+
+.Landing-page-container .Landing-page-about .Landing-page-about-content-1 p {
+  text-align: justify;
+  letter-spacing: 0.05em;
+  line-height: 1.5em;
+}
+/*# sourceMappingURL=LandingPage.css.map */
