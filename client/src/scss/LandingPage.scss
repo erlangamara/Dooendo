@@ -1,70 +1,315 @@
-.Landing-page-container {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-
-  .Landing-page-introduction {
-    text-align: center;
+//phone
+@media only screen and (max-width: 768px) {
+  .Landing-page-container {
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    flex-basis: 25vh;
-    padding: 5%;
-    background-color: #e2f3f5;
-
-    h1 {
-      margin-bottom: 2%;
-    }
-
-    p {
-      margin-bottom: 3%;
-      font-family: Arial, Helvetica, sans-serif;
-      letter-spacing: 0.05em;
-      line-height: 1.5em;
-    }
-
-    .Landing-page-start-button {
-      color: #581b98;
-    }
-    
-    .Landing-page-go-button {
-      height: 7vh;
-      width: 20vw;
-      border: solid;
-      background-color: #22d1ee;
-      border-color: #22d1ee;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  }
-
-  .Landing-page-about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
+    width: 100%;
     height: 100%;
-    padding: 5%;
-
-    .Landing-page-about-content-1 {
-      width: 50%;
-
+  
+    .Landing-page-introduction {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      flex-basis: 25vh;
+      padding: 5%;
+      background-color: #e2f3f5;
+  
       h1 {
         margin-bottom: 2%;
       }
-
+  
       p {
-        text-align: justify;
+        margin-bottom: 3%;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 0.02em;
+        line-height: 1.5em;
+        font-size: 85%;
+      }
+  
+      .Landing-page-start-button {
+        color: #581b98;
+        h3 {
+          font-size: 75%;
+          font-weight: bold;
+        }
+      }
+      
+      .Landing-page-go-button {
+        height: 7vh;
+        width: 45vw;
+        border: solid;
+        background-color: #22d1ee;
+        border-color: #22d1ee;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  
+    .Landing-page-about {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      height: 100%;
+      padding: 5%;
+  
+      .Landing-page-about-content-1 {
+        width: 70%;
+  
+        h1 {
+          margin-bottom: 2%;
+        }
+  
+        p {
+          text-align: justify;
+          letter-spacing: 0.02em;
+          line-height: 1.5em;
+        }
+      }
+    }
+  
+  }
+}
+
+//ipad
+@media only screen and (min-width: 768px) {
+  .Landing-page-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  
+    .Landing-page-introduction {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      flex-basis: 25vh;
+      padding: 5%;
+      background-color: #e2f3f5;
+  
+      h1 {
+        margin-bottom: 2%;
+      }
+  
+      p {
+        margin-bottom: 3%;
+        font-family: Arial, Helvetica, sans-serif;
         letter-spacing: 0.05em;
         line-height: 1.5em;
       }
+  
+      .Landing-page-start-button {
+        color: #581b98;
+        h3 {
+          font-size: 100%;
+          font-weight: bold;
+        }
+      }
+      
+      .Landing-page-go-button {
+        height: 7vh;
+        width: 30vw;
+        border: solid;
+        background-color: #22d1ee;
+        border-color: #22d1ee;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
+  
+    .Landing-page-about {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      height: 100%;
+      padding: 5%;
+  
+      .Landing-page-about-content-1 {
+        width: 50%;
+  
+        h1 {
+          margin-bottom: 2%;
+        }
+  
+        p {
+          text-align: justify;
+          letter-spacing: 0.05em;
+          line-height: 1.5em;
+        }
+      }
+    }
+  
   }
+}
 
+//ipad-pro
+@media only screen and (min-width: 1024px) {
+  .Landing-page-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  
+    .Landing-page-introduction {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      flex-basis: 25vh;
+      padding: 5%;
+      background-color: #e2f3f5;
+  
+      h1 {
+        margin-bottom: 2%;
+        font-size: 200%;
+      }
+  
+      p {
+        margin-bottom: 3%;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 0.05em;
+        line-height: 1.5em;
+        font-size: 120%;
+      }
+  
+      .Landing-page-start-button {
+        color: #581b98;
+        h3 {
+          font-size: 100%;
+          font-weight: bold;
+        }
+      }
+      
+      .Landing-page-go-button {
+        height: 7vh;
+        width: 25vw;
+        border: solid;
+        background-color: #22d1ee;
+        border-color: #22d1ee;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  
+    .Landing-page-about {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      height: 100%;
+      padding: 5%;
+  
+      .Landing-page-about-content-1 {
+        width: 50%;
+  
+        h1 {
+          margin-bottom: 2%;
+        }
+  
+        p {
+          text-align: justify;
+          letter-spacing: 0.05em;
+          line-height: 1.5em;
+          font-size: 120%;
+        }
+      }
+    }
+  
+  }
+}
+
+//desktop
+@media only screen and (min-width: 1100px) {
+  .Landing-page-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  
+    .Landing-page-introduction {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      flex-basis: 25vh;
+      padding: 5%;
+      background-color: #e2f3f5;
+  
+      h1 {
+        margin-bottom: 2%;
+      }
+  
+      p {
+        margin-bottom: 3%;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 0.05em;
+        line-height: 1.5em;
+      }
+  
+      .Landing-page-start-button {
+        color: #581b98;
+        h3 {
+          font-size: 100%;
+          font-weight: bold;
+        }
+      }
+      
+      .Landing-page-go-button {
+        height: 7vh;
+        width: 20vw;
+        border: solid;
+        background-color: #22d1ee;
+        border-color: #22d1ee;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  
+    .Landing-page-about {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      height: 100%;
+      padding: 5%;
+  
+      .Landing-page-about-content-1 {
+        width: 50%;
+  
+        h1 {
+          margin-bottom: 2%;
+        }
+  
+        p {
+          text-align: justify;
+          letter-spacing: 0.05em;
+          line-height: 1.5em;
+        }
+      }
+    }
+  
+  }
 }

@@ -96,6 +96,20 @@ class Controller {
       next(err);
     }
   }
+
+  static async getHabitByUser (req, res, next) {
+    try {
+      let result = await Habit.findAll({
+        where: {
+          UserId: req.user.id
+        }
+      });
+      
+      res.status(200).json(result);
+    } catch (err) {
+      next(err);
+    }
+  }
 }
 
 module.exports = Controller;

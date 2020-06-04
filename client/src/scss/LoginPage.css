@@ -1,133 +1,387 @@
-.Login-page-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
+@media only screen and (max-width: 768px) {
+  .Login-page-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  .Login-form-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 5%;
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+    height: 50vh;
+  }
+  .Login-form-container .Login-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 25%;
+    border-bottom: solid 0.5px;
+    height: 55%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .Login-form-container .Login-form form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Login-form-container .Login-form form h1 {
+    margin-bottom: 10%;
+  }
+  .Login-form-container .Login-form form label {
+    margin-bottom: 2%;
+  }
+  .Login-form-container .Login-form form input {
+    margin-bottom: 3%;
+    height: 25%;
+    width: 120%;
+    border-color: #dee1ec;
+  }
+  .Login-form-container .Login-form form button {
+    margin-top: 5%;
+    height: 10vh;
+    width: 120%;
+    background-color: #30e3ca;
+    border-color: #30e3ca;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+  .Login-form-container .Register-redirect {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 95%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    text-align: center;
+  }
+  .Login-form-container .Register-redirect h3 {
+    margin-top: 10%;
+    font-size: 150%;
+  }
+  .Login-form-container .Register-redirect a {
+    color: black;
+  }
+  .Login-form-container .Register-redirect .Redirect-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    width: 95%;
+    -ms-flex-preferred-size: 35%;
+        flex-basis: 35%;
+    margin-top: 5%;
+    background-color: #ff9f68;
+  }
 }
 
-.Login-form-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 5%;
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
-  height: 50vh;
+@media only screen and (min-width: 768px) {
+  .Login-page-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  .Login-form-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 5%;
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+    height: 50vh;
+  }
+  .Login-form-container .Login-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-right: solid 0.5px;
+    height: 55%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    padding-right: 15%;
+  }
+  .Login-form-container .Login-form form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Login-form-container .Login-form form h1 {
+    margin-bottom: 10%;
+  }
+  .Login-form-container .Login-form form label {
+    margin-bottom: 2%;
+  }
+  .Login-form-container .Login-form form input {
+    margin-bottom: 3%;
+    height: 25%;
+    width: 120%;
+  }
+  .Login-form-container .Login-form form button {
+    margin-top: 5%;
+    height: 10vh;
+    width: 120%;
+    background-color: #30e3ca;
+    border-color: #30e3ca;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+  .Login-form-container .Register-redirect {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 95%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    padding-left: 10%;
+  }
+  .Login-form-container .Register-redirect h3 {
+    margin-top: 10%;
+  }
+  .Login-form-container .Register-redirect a {
+    color: black;
+  }
+  .Login-form-container .Register-redirect .Redirect-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    width: 50%;
+    -ms-flex-preferred-size: 15%;
+        flex-basis: 15%;
+    margin-top: 5%;
+    background-color: #ff9f68;
+  }
 }
 
-.Login-form-container .Login-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-right: solid 0.5px;
-  height: 55%;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-}
-
-.Login-form-container .Login-form form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.Login-form-container .Login-form form h1 {
-  margin-bottom: 10%;
-}
-
-.Login-form-container .Login-form form label {
-  margin-bottom: 2%;
-}
-
-.Login-form-container .Login-form form input {
-  margin-bottom: 3%;
-  height: 25%;
-  width: 120%;
-}
-
-.Login-form-container .Login-form form button {
-  margin-top: 5%;
-  height: 10vh;
-  width: 120%;
-  background-color: #30e3ca;
-  border-color: #30e3ca;
-  border-radius: 5px;
-  font-size: 15px;
-}
-
-.Login-form-container .Register-redirect {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 95%;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-}
-
-.Login-form-container .Register-redirect h3 {
-  margin-top: 10%;
-}
-
-.Login-form-container .Register-redirect a {
-  color: black;
-}
-
-.Login-form-container .Register-redirect .Redirect-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  width: 50%;
-  -ms-flex-preferred-size: 15%;
-      flex-basis: 15%;
-  margin-top: 5%;
-  background-color: #ff9f68;
+@media only screen and (min-width: 1100px) {
+  .Login-page-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  .Login-form-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 5%;
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+    height: 50vh;
+  }
+  .Login-form-container .Login-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-right: solid 0.5px;
+    height: 55%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .Login-form-container .Login-form form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Login-form-container .Login-form form h1 {
+    margin-bottom: 10%;
+  }
+  .Login-form-container .Login-form form label {
+    margin-bottom: 2%;
+  }
+  .Login-form-container .Login-form form input {
+    margin-bottom: 3%;
+    height: 25%;
+    width: 120%;
+  }
+  .Login-form-container .Login-form form button {
+    margin-top: 5%;
+    height: 10vh;
+    width: 120%;
+    background-color: #30e3ca;
+    border-color: #30e3ca;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+  .Login-form-container .Register-redirect {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 95%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .Login-form-container .Register-redirect h3 {
+    margin-top: 10%;
+  }
+  .Login-form-container .Register-redirect a {
+    color: black;
+  }
+  .Login-form-container .Register-redirect .Redirect-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    width: 70%;
+    -ms-flex-preferred-size: 15%;
+        flex-basis: 15%;
+    border-radius: 10px;
+    margin-top: 5%;
+    background-color: #ff9f68;
+  }
 }
 /*# sourceMappingURL=LoginPage.css.map */

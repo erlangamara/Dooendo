@@ -1,0 +1,77 @@
+.Profile-page-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.Profile-page-upper {
+  display: flex;
+  width: 100%;
+  height: 35%;
+  // border-bottom: solid 1px;
+  // border-color: #303a52;
+  background-color: #e2f3f5;
+
+  img {
+    height: 50%;
+    flex-basis: 10%;
+    border: solid 5px;
+    border-radius: 50%;
+    margin-left: 10%;
+    margin-top: 5%;
+  }
+
+  .Profile-data {
+    height: 50%;
+    flex-basis: 50%;
+    // border: solid 1px;
+    margin-left: 5%;
+    margin-top: 5%;
+
+    h1 {
+      margin-bottom: 1%;
+    }
+
+    h2 {
+      margin-bottom: 1%;
+    }
+  }
+}
+
+.Profile-page-bellow {
+  display: flex;
+  height: 70%;
+  // border: solid 1px;
+
+  .Profile-page-side-bar {
+    flex: 0.75;
+    // border-right: solid 1px;
+    background-color: #574b90;
+  }
+
+  .Profile-page-list {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    // flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+
+    h3 {
+      margin-top: 2%;
+      margin-bottom: 1%;
+    }
+
+    a {
+      color: black;
+    }
+
+    .Profile-page-list-container {
+      display: flex;
+      // flex-direction: column;
+      flex-wrap: wrap;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

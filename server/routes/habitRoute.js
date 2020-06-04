@@ -4,6 +4,7 @@ const authentication = require('../middlewares/authentication');
 const authorization = require('../middlewares/authorization');
 
 router.get('/', Controller.getHabit);
+router.get('/userHabit', authentication, Controller.getHabitByUser);
 router.get('/:id', Controller.getHabitById);
 
 router.use(authentication);
