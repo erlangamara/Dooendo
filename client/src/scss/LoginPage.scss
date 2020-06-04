@@ -1,277 +1,112 @@
-//phone
-@media only screen and (max-width: 768px) {
-  .Login-page-container {
+@import './ResponsiveVariable';
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+.Login-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.Login-form-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin: 5%;
+  flex-basis: 45%;
+  height: 50vh;
+
+  @include desktop {
+    flex-direction: row;
+  }
+
+  .Login-form {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
-  }
+    padding-bottom: 25%;
+    border-bottom: solid 0.5px;
+    height: 55%;
+    flex-basis: 50%;
+
+    @include desktop {
+      border-bottom: none;
+      padding-bottom: 0;
+      border-right: solid 0.5px;
   
-  .Login-form-container {
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        margin-bottom: 10%;
+      }
+  
+      label {
+        margin-bottom: 2%;
+      }
+  
+      input {
+        margin-bottom: 3%;
+        height: 25%;
+        width: 120%;
+        border-color: #dee1ec;
+      }
+
+      button {
+        margin-top: 5%;
+        height: 10vh;
+        width: 120%;
+        background-color: #30e3ca;
+        border-color: #30e3ca;
+        border-radius: 5px;
+        font-size: 15px;
+      }
+    }
+  }
+
+  .Register-redirect {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 5%;
-    flex-basis: 45%;
-    height: 50vh;
-  
-    .Login-form {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding-bottom: 25%;
-      border-bottom: solid 0.5px;
-      height: 55%;
-      flex-basis: 50%;
-  
-      form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-  
-        h1 {
-          margin-bottom: 10%;
-        }
-    
-        label {
-          margin-bottom: 2%;
-        }
-    
-        input {
-          margin-bottom: 3%;
-          height: 25%;
-          width: 120%;
-          border-color: #dee1ec;
-        }
-  
-        button {
-          margin-top: 5%;
-          height: 10vh;
-          width: 120%;
-          background-color: #30e3ca;
-          border-color: #30e3ca;
-          border-radius: 5px;
-          font-size: 15px;
-        }
-      }
-  
-  
-    }
-  
-    .Register-redirect {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      height: 95%;
-      flex-basis: 50%;
-      text-align: center;
-  
-      h3 {
-        margin-top: 10%;
-        font-size: 150%;
-      }
-  
-      a{
-        color: black;
-      }
-  
-      .Redirect-link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 95%;
-        flex-basis: 35%;
-        margin-top: 5%;
-        background-color: #ff9f68;
-      }
-    }
-  }
-}
+    height: 95%;
+    flex-basis: 50%;
+    text-align: center;
 
-//ipad
-@media only screen and (min-width: 768px) {
-  .Login-page-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-  
-  .Login-form-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    margin: 5%;
-    flex-basis: 45%;
-    height: 50vh;
-  
-    .Login-form {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      border-right: solid 0.5px;
-      height: 55%;
-      flex-basis: 50%;
-      padding-right: 15%;
-  
-      form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-  
-        h1 {
-          margin-bottom: 10%;
-        }
-    
-        label {
-          margin-bottom: 2%;
-        }
-    
-        input {
-          margin-bottom: 3%;
-          height: 25%;
-          width: 120%;
-        }
-  
-        button {
-          margin-top: 5%;
-          height: 10vh;
-          width: 120%;
-          background-color: #30e3ca;
-          border-color: #30e3ca;
-          border-radius: 5px;
-          font-size: 15px;
-        }
-      }
-  
-  
+    h3 {
+      margin-top: 10%;
+      font-size: 150%;
     }
-  
-    .Register-redirect {
+
+    a{
+      color: black;
+    }
+
+    .Redirect-link {
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
-      height: 95%;
-      flex-basis: 50%;
-      padding-left: 10%;
-  
-      h3 {
-        margin-top: 10%;
-      }
-  
-      a{
-        color: black;
-      }
-  
-      .Redirect-link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+      text-align: center;
+      width: 95%;
+      flex-basis: 35%;
+      margin-top: 5%;
+      background-color: #ff9f68;
+
+      @include desktop {
         width: 50%;
         flex-basis: 15%;
-        margin-top: 5%;
-        background-color: #ff9f68;
-      }
-    }
-  }
-}
-
-//desktop
-@media only screen and (min-width: 1100px) {
-  .Login-page-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-  
-  .Login-form-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 5%;
-    flex-basis: 45%;
-    height: 50vh;
-  
-    .Login-form {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      border-right: solid 0.5px;
-      height: 55%;
-      flex-basis: 50%;
-  
-      form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-  
-        h1 {
-          margin-bottom: 10%;
-        }
-    
-        label {
-          margin-bottom: 2%;
-        }
-    
-        input {
-          margin-bottom: 3%;
-          height: 25%;
-          width: 120%;
-        }
-  
-        button {
-          margin-top: 5%;
-          height: 10vh;
-          width: 120%;
-          background-color: #30e3ca;
-          border-color: #30e3ca;
-          border-radius: 5px;
-          font-size: 15px;
-        }
-      }
-  
-  
-    }
-  
-    .Register-redirect {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      height: 95%;
-      flex-basis: 50%;
-  
-      h3 {
-        margin-top: 10%;
-      }
-  
-      a{
-        color: black;
-      }
-  
-      .Redirect-link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 70%;
-        flex-basis: 15%;
-        border-radius: 10px;
-        margin-top: 5%;
-        background-color: #ff9f68;
       }
     }
   }

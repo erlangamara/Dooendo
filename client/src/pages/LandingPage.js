@@ -10,8 +10,7 @@ const LandingPage = () => {
         <div className="Landing-page-introduction">
           <h1>Hello there...</h1>
           <p>
-            Have you ever been in that situation where you don't know what to do for today? <br />
-            Well worry no more because <b>Dooendo</b> got plenty of things for you to full fill your day.
+            Have you ever been in that situation where you don't know what to do for today? Well worry no more because <b>Dooendo</b> got plenty of things for you to full fill your day.
           </p>
           <Link className="Landing-page-start-button" to="/main">
             <div className="Landing-page-go-button">

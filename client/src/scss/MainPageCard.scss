@@ -1,58 +1,65 @@
-@media only screen and (min-width: 1100px) {
-  .Main-page-card {
-    display: flex;
-    height: 15vh;
-    margin: 1%;
+@import './ResponsiveVariable';
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+.Main-page-card {
+  display: flex;
+  margin-bottom: 5%;
+  width: 75%;
+  height: 15vh;
+  flex-direction: column;
+  padding: 1%;
+  border: solid 2.5px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fdfdfd;
+  border-color: #f5f5f5;
+  border-radius: 5px;
+
+  @include desktop {
     margin-left: 8.2%;
     margin-top: 1%;
-    margin-bottom: 2%;
-    flex-basis: 20vh;
-    flex-direction: column;
-    padding: 1%;
-    border: solid 2.5px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
-    background-color: #fdfdfd;
-    border-color: #f5f5f5;
-    border-radius: 5px;
     flex: 0 35%;
-    
-    .Main-page-card-content-1 {
+  }
+  
+  .Main-page-card-content-1 {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    min-height: 25%;
+    flex-basis: 50%;
+    padding: 2%;
+    margin-bottom: 2%;
+
+    img {
+      margin-right: 1%;
+      border-radius: 50%;
+      height: 120%;
+      flex-basis: 20%;
+      padding: 1%;
+    }
+
+    .Card-data {
       display: flex;
-      flex-direction: row;
-      width: 95%;
-      min-height: 25%;
-      flex-basis: 50%;
-      padding: 2%;
-      margin-bottom: 2%;
-  
-      img {
-        margin-right: 1%;
-        // border: solid 1px;
-        border-radius: 50%;
-        height: 120%;
-        flex-basis: 20%;
-        padding: 1%;
+      flex-direction: column;
+      width: 70%;
+
+      h2{
+        font-size: 150%;
       }
-  
-      .Card-data {
-        display: flex;
-        flex-direction: column;
-        width: 70%;
-  
-        h2{
-          font-size: 150%;
-        }
-  
-        p {
-          margin-top: 2%;
-        }
+
+      p {
+        margin-top: 2%;
       }
     }
-    
-    .Main-page-card-content-description {
-      flex-basis: 55%;
-      // border: solid 1px;
-      padding: 2%;
-    }
+  }
+  
+  .Main-page-card-content-description {
+    flex-basis: 55%;
+    // border: solid 1px;
+    padding: 2%;
   }
 }

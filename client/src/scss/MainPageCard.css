@@ -1,73 +1,80 @@
-@media only screen and (min-width: 1100px) {
+.Main-page-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 5%;
+  width: 75%;
+  height: 15vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1%;
+  border: solid 2.5px;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fdfdfd;
+  border-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+@media (min-width: 840px) {
   .Main-page-card {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 15vh;
-    margin: 1%;
     margin-left: 8.2%;
     margin-top: 1%;
-    margin-bottom: 2%;
-    -ms-flex-preferred-size: 20vh;
-        flex-basis: 20vh;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 1%;
-    border: solid 2.5px;
-    -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
-            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
-    background-color: #fdfdfd;
-    border-color: #f5f5f5;
-    border-radius: 5px;
     -webkit-box-flex: 0;
         -ms-flex: 0 35%;
             flex: 0 35%;
   }
-  .Main-page-card .Main-page-card-content-1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    width: 95%;
-    min-height: 25%;
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-    padding: 2%;
-    margin-bottom: 2%;
-  }
-  .Main-page-card .Main-page-card-content-1 img {
-    margin-right: 1%;
-    border-radius: 50%;
-    height: 120%;
-    -ms-flex-preferred-size: 20%;
-        flex-basis: 20%;
-    padding: 1%;
-  }
-  .Main-page-card .Main-page-card-content-1 .Card-data {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 70%;
-  }
-  .Main-page-card .Main-page-card-content-1 .Card-data h2 {
-    font-size: 150%;
-  }
-  .Main-page-card .Main-page-card-content-1 .Card-data p {
-    margin-top: 2%;
-  }
-  .Main-page-card .Main-page-card-content-description {
-    -ms-flex-preferred-size: 55%;
-        flex-basis: 55%;
-    padding: 2%;
-  }
+}
+
+.Main-page-card .Main-page-card-content-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 95%;
+  min-height: 25%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding: 2%;
+  margin-bottom: 2%;
+}
+
+.Main-page-card .Main-page-card-content-1 img {
+  margin-right: 1%;
+  border-radius: 50%;
+  height: 120%;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  padding: 1%;
+}
+
+.Main-page-card .Main-page-card-content-1 .Card-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+}
+
+.Main-page-card .Main-page-card-content-1 .Card-data h2 {
+  font-size: 150%;
+}
+
+.Main-page-card .Main-page-card-content-1 .Card-data p {
+  margin-top: 2%;
+}
+
+.Main-page-card .Main-page-card-content-description {
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+  padding: 2%;
 }
 /*# sourceMappingURL=MainPageCard.css.map */

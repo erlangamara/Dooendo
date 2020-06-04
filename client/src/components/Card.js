@@ -26,9 +26,6 @@ const Card = (props) => {
               <p>{data.creator_username}</p>
             </div>
           </div>
-          {/* <div className="Main-page-card-content-description">
-            <p>{data.description}</p>
-          </div> */}
         </Link>
         )
       })

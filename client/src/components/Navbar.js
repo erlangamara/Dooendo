@@ -42,9 +42,9 @@ const Navbar = () => {
             <Link to="/">About</Link>
             {
               !isLogedin ? (
-                <Link className="Nav-3-content" to="/login">Login</Link>
+                <Link to="/login">Login</Link>
               ) : (
-                <Link className="Nav-3-content" to="/profile">Profile</Link>
+                <Link to="/profile">Profile</Link>
               )
             }
             {
