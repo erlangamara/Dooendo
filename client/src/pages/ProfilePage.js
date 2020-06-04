@@ -63,8 +63,10 @@ const ProfilePage = () => {
         </div>
         <div className="Profile-page-list">
           <h3>My Habit</h3>
-          <div className="Profile-page-list-container">
-            <Card habitList={userHabit} page={'profilePage'}></Card>
+          <div className="Profile-page-card-wrapper">
+            <div className="Profile-page-list-container">
+              <Card habitList={userHabit} page={'profilePage'}></Card>
+            </div>
           </div>
         </div>
       </div>

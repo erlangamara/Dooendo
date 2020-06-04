@@ -1,3 +1,11 @@
+@import './ResponsiveVariable';
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
 .Create-habit-page-container {
   display: flex;
   justify-content: flex-start;
@@ -5,24 +13,39 @@
   flex-direction: column;
   width: 100%;
   height: 100vh;
-  border: solid 1px;
   padding-top: 2%;
+
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
 
   .Create-section {
     display: flex;
     width: 80%;
     flex-basis: 70%;
-    // border: solid 1px;
+    flex-direction: column;
     margin-top: 2%;
+
+    @include desktop {
+      flex-direction: row;
+    }
 
     .Create-habit-form-section {
       display: flex;
       justify-content: center;
       height: 100%;
       flex-basis: 50%;
-      margin-left: 5%;
-      border-right: solid 2px;
+      // margin-left: 5%;
+      // border-right: solid 2px;
+      border-bottom: solid 2px;
       border-color: #dee1ec;
+
+      @include desktop {
+        border-bottom: none;
+        border-right: solid 2px;
+        border-color: #dee1ec;
+      }
 
       .Create-habit-main-form {
         display: flex;
@@ -37,7 +60,7 @@
         input {
           margin-bottom: 3%;
           border-radius: 2px;
-          height: 3%;
+          height: 5%;
           border-color: #dee1ec;
         }
 
@@ -50,7 +73,7 @@
 
         button {
           height: 10%;
-          margin-top: 2%;
+          margin-top: 5%;
           border-radius: 10px;
           background-color: #21e6c1;
           border: none;
@@ -65,6 +88,11 @@
         margin-left: 5%;
         margin-right: 5%;
         margin-top: 2%;
+
+        @include desktop {
+          margin-left: 0;
+          margin-right: 10%;
+        }
   
         label {
           margin-bottom: 5%;
@@ -90,6 +118,7 @@
       flex-direction: column;
       height: 100%;
       flex-basis: 50%;
+      margin-top: 2%;
 
       h3 {
         margin-top: 2%;
