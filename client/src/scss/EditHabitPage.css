@@ -39,6 +39,12 @@
   height: 70%;
 }
 
+@media (min-width: 840px) {
+  .Edit-habit-page-form-container {
+    width: 55%;
+  }
+}
+
 .Edit-habit-form {
   display: -webkit-box;
   display: -ms-flexbox;

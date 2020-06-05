@@ -1,3 +1,11 @@
+@import './ResponsiveVariable';
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
 .Edit-habit-page-container {
   display: flex;
   justify-content: flex-start;
@@ -19,6 +27,10 @@
   flex-direction: column;
   width: 100%;
   height: 70%;
+
+  @include desktop {
+    width: 55%;
+  }
 }
 
 .Edit-habit-form {

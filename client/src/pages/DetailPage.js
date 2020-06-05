@@ -21,7 +21,7 @@ const DetailPage = () => {
   const [open, setOpen] = useState(false);
   const [deleteNotice, setDeleteNotice] = useState(false);
   
-  const habit = useSelector(state => state.habitReducer.habit)
+  const habit = useSelector(state => state.habitReducer.habit);
 
   useEffect(() => {
     dispatch(getHabitById(params.id));
